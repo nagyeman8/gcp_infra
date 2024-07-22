@@ -18,7 +18,7 @@ variable "notification_channels" {
   type = list(string)
 }
 
-variable "env_name" {
+variable "env" {
   type = string
 }
 
