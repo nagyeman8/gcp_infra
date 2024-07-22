@@ -10,7 +10,7 @@ resource "google_compute_instance" "default" {
     vtpm                 = var.vtpm
   }
 
-  tags = merge(local.default_tags, var.inf_override_tags, { Name = "${var.project}-${var.env}-rds-instance" })
+  tags = merge(local.default_tags, var.inf_override_tags, { Name = "${var.project}-${var.env}-bastion-instance" })
   
   lifecycle {
     ignore_changes = [
